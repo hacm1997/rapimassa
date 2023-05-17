@@ -1,0 +1,25 @@
+.section {
+    height: 100vh;
+    background-color: #9a1828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section img {
+    animation: flotando 2s infinite;
+}
+
+@keyframes flotando {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+
+
+}

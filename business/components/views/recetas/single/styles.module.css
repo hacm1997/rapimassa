@@ -1,0 +1,100 @@
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.general {
+    max-width: 80%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 280px;
+    border-radius: 30px 30px 0 0;
+    background-color: #FFFFFF;
+    padding: 60px 60px 100px 60px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+.title h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #3a3a3a;
+    margin-bottom: 20px;
+}
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.info span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info i {
+    color: #dd172d;
+}
+
+.cardGeneral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.description {
+    margin-top: 60px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+@media (max-width: 1296px) {
+    .general {
+        max-width: 90%;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .cardGeneral {
+        grid-template-columns: 1fr;
+    }
+
+    .video {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 840px) {
+    .title h1 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 726px) {
+    .title h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 542px) {
+    .info {
+        flex-direction: column;
+        gap: 10px;
+        align-items: initial;
+    }
+}

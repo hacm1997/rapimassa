@@ -1,0 +1,10 @@
+.puntosBlancos {
+    position: absolute;
+    left: 80px;
+    top: 90px;
+}
+.lineas{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}

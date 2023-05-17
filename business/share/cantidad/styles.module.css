@@ -1,0 +1,17 @@
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #004a8d;
+    border-radius: 30px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+}
+
+.quantity i {
+    color: #dd172d;
+    font-size: 20px;
+    cursor: pointer;
+}

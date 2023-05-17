@@ -1,0 +1,74 @@
+.section {
+    background-image: url("/images/fondos/call-to-action-rapiMasa.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -30px;
+}
+
+.content{
+    padding: 0 40px;
+    position: relative;
+    z-index: 5;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #000000;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.content h2 span {
+    color: #f3b620;
+    font-weight: bold;
+}
+
+.content a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #f3b620;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.content a:hover {
+    background-color: #dd172d;
+    box-shadow: 0px 0px 10px #000000;
+    transform: translateY(-5px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apoyoGrafico {
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+    z-index: 2;
+}
+
+@media (max-height: 1400px) {
+    .content h2 {
+        font-size: 30px;
+    }
+}

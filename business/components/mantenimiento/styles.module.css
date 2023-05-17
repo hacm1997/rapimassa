@@ -1,0 +1,284 @@
+.mantenimiento {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.multimedia img {
+    height: 100%;
+}
+
+.content_1 {
+    margin-right: 250px;
+}
+
+.content_1 .logo_title {
+    position: relative;
+    margin-left: 150px;
+    width: 500px;
+}
+
+
+.content_1 .logo_title h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #2D5094;
+    width: 380px;
+    margin: 0;
+}
+
+.content_1 .logo_title h1 span {
+    font-weight: bold;
+    color: #C72E37;
+}
+
+.content_2 {
+    position: relative;
+    margin-left: 150px;
+    width: 400px;
+}
+
+.content_2 p {
+    font-size: 31px;
+    font-weight: 400;
+    color: #2D5094;
+}
+
+.content_2 p span {
+    color: #C72E37;
+}
+
+.social {
+    position: relative;
+    margin-left: 150px;
+    display: flex;
+    gap: 20px;
+}
+
+.social i {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: center;
+    color: #fafafa;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #C72E37;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.social i:hover {
+    background-color: #2D5094;
+}
+
+.comunicacion {
+    position: relative;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.comunicacion .whatsapp {
+    position: relative;
+    border-radius: 30px;
+    background-color: #2D5094;
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    color: #fafafa;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.comunicacion .whatsapp:hover {
+    background-color: #C72E37;
+}
+
+.comunicacion .whatsapp i {
+    color: #fafafa;
+    background-color: #C72E37;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    z-index: 2;
+}
+
+.comunicacion .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    color: #2D5094;
+    margin: 0;
+}
+
+.comunicacion .email i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #C72E37;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.comunicacion .email i:hover {
+    background-color: #2D5094;
+}
+
+.multimedia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+
+.multimedia .img_1 img {
+    border-radius: 40px;
+}
+
+.linea_roja {
+    height: 100%;
+    width: 1100px;
+    border-radius: 10px 0 0 10px;
+    z-index: 2;
+}
+
+
+.comunicacion .whatsapp:before {
+    content: "¡Agenda tu pédido aqui!";
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    padding: 0 70px;
+}
+
+
+.multimedia {
+    background-image: url("/images/Rapimasa,-sietio-en-construcción.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+}
+
+@media (max-width: 1000px) {
+    .mantenimiento {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .multimedia {
+        display: none;
+
+    }
+}
+
+@media (max-width: 700px) {
+    .content_1 .logo_title {
+        width: 100%;
+    }
+
+    .content_1 .logo_title h1 {
+        font-size: 36px;
+    }
+
+
+}
+
+@media (max-width: 514px) {
+    .mantenimiento {
+        padding: 0 30px;
+    }
+
+    .comunicacion {
+        width: 100%;
+    }
+
+    .content_1 {
+        margin-right: 0;
+    }
+
+    .content_1 .logo_title {
+
+        margin-left: 0;
+    }
+
+    .content_2 {
+        margin-left: 0;
+    }
+    .social {
+        margin-left: 0;
+    }
+    .comunicacion {
+        margin-left: 0;
+    }
+    .content_1 .logo_title h1 {
+        width: 100%;
+    }
+
+    .content_1 .logo_title h1 {
+        font-size: 26px;
+    }
+
+    .content_2 p {
+        font-size: 26px;
+    }
+    .comunicacion .whatsapp:before {
+        font-size: 20px;
+    }
+    .comunicacion .email {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 448px) {
+    .content_2 {
+        width: 100%;
+    }
+    .comunicacion .whatsapp:before {
+        font-size: 18px;
+    }
+    .comunicacion .email {
+        font-size: 18px;
+    }
+    .mantenimiento{
+        align-items: normal;
+    }
+    .comunicacion .email i {
+
+        width: 40px;
+        height: 40px;
+    }
+    .comunicacion .whatsapp i {
+        width: 40px;
+        height: 40px;
+    }
+    .social i {
+        width: 40px;
+        height: 40px;
+    }
+
+}

@@ -1,0 +1,105 @@
+.section {
+    background-image: url("/images/fondos/fondo-blanco-papel-2.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.general {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    padding: 0 40px;
+}
+
+.cardGeneral {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    z-index: 2;
+}
+
+.content {
+    z-index: 1;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+
+}
+
+.content h2 span {
+    font-weight: 700;
+    color: #dd172d;
+}
+
+
+.content p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content p span {
+    font-weight: 700;
+    color: #dd172d;
+}
+
+.apoyoGrafico_1 {
+    position: absolute;
+}
+
+.apoyoGrafico_2 {
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+}
+
+@media (max-width: 1400px) {
+    .content h2 {
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .general {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section{
+        padding: 40px 0;
+        height: auto;
+    }
+    .apoyoGrafico_1{
+        top: 20px;
+    }
+    .content h2{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 555px) {
+    .cardGeneral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
